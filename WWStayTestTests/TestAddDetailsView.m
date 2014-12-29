@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "AddDetailsView.h"
 
 @interface TestAddDetailsView : XCTestCase
+{
+    AddDetailsView *mAddDetailsView;
+
+}
 
 @end
 
@@ -25,16 +30,22 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void)testTextFieldLength
+{
+    mAddDetailsView = [[AddDetailsView alloc] init];
+    UITextField *nameTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eNameTxtTag];
+//    UITextField *addressTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eAddressTxtTag];
+//    UITextField *cityTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eCityTxtTag];
+//    UITextField *stateTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eStateTxtTag];
+//    UITextField *countryTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eCountryTxtTag];
+//    UITextField *descriptionTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eDescriptionTxtTag];
+//    UITextField *amenitiesTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eAmenitiesTxtTag];
+//    UITextField *contactnameTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eContactNameTxtTag];
+//    UITextField *emailTxtFld = (UITextField*)[mAddDetailsView viewWithTag:eEmailTxtTag];
+    
+    nameTxtFld.text = @"test";
+    NSString *testUserName = nameTxtFld.text;
+    XCTAssert((testUserName.length <= 40), @"UserName exceeds maximum limit!!");
 }
 
 @end

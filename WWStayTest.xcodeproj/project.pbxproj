@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		610B848A1A5044C600FAEAAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84891A5044C600FAEAAD /* main.m */; };
 		610B848D1A5044C600FAEAAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B848C1A5044C600FAEAAD /* AppDelegate.m */; };
-		610B84901A5044C600FAEAAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B848F1A5044C600FAEAAD /* ViewController.m */; };
+		610B84901A5044C600FAEAAD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B848F1A5044C600FAEAAD /* HomeViewController.m */; };
 		610B84931A5044C600FAEAAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610B84911A5044C600FAEAAD /* Main.storyboard */; };
 		610B84951A5044C600FAEAAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610B84941A5044C600FAEAAD /* Images.xcassets */; };
 		610B84981A5044C600FAEAAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610B84961A5044C600FAEAAD /* LaunchScreen.xib */; };
 		610B84A41A5044C600FAEAAD /* WWStayTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84A31A5044C600FAEAAD /* WWStayTestTests.m */; };
+		610B84AE1A50482E00FAEAAD /* ApartmentDetails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 610B84AD1A50482E00FAEAAD /* ApartmentDetails.plist */; };
+		610B84B11A5048A800FAEAAD /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84B01A5048A800FAEAAD /* HomeView.m */; };
+		610B84B41A5050F900FAEAAD /* AddDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84B31A5050F900FAEAAD /* AddDetailsViewController.m */; };
+		610B84B71A50512500FAEAAD /* AddDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84B61A50512500FAEAAD /* AddDetailsView.m */; };
+		610B84BC1A50DC3200FAEAAD /* ViewDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84BB1A50DC3200FAEAAD /* ViewDetailsViewController.m */; };
+		610B84BF1A50DC5A00FAEAAD /* ViewDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84BE1A50DC5A00FAEAAD /* ViewDetailsView.m */; };
+		610B84C21A50FEAB00FAEAAD /* TestAddDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84C11A50FEAB00FAEAAD /* TestAddDetailsViewController.m */; };
+		610B84C41A50FFD700FAEAAD /* TestAddDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 610B84C31A50FFD700FAEAAD /* TestAddDetailsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +40,29 @@
 		610B84891A5044C600FAEAAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		610B848B1A5044C600FAEAAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		610B848C1A5044C600FAEAAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		610B848E1A5044C600FAEAAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		610B848F1A5044C600FAEAAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		610B848E1A5044C600FAEAAD /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		610B848F1A5044C600FAEAAD /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		610B84921A5044C600FAEAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		610B84941A5044C600FAEAAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		610B84971A5044C600FAEAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		610B849D1A5044C600FAEAAD /* WWStayTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWStayTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610B84A21A5044C600FAEAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610B84A31A5044C600FAEAAD /* WWStayTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWStayTestTests.m; sourceTree = "<group>"; };
+		610B84AD1A50482E00FAEAAD /* ApartmentDetails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApartmentDetails.plist; sourceTree = "<group>"; };
+		610B84AF1A5048A800FAEAAD /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		610B84B01A5048A800FAEAAD /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		610B84B21A5050F900FAEAAD /* AddDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDetailsViewController.h; sourceTree = "<group>"; };
+		610B84B31A5050F900FAEAAD /* AddDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDetailsViewController.m; sourceTree = "<group>"; };
+		610B84B51A50512500FAEAAD /* AddDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDetailsView.h; sourceTree = "<group>"; };
+		610B84B61A50512500FAEAAD /* AddDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDetailsView.m; sourceTree = "<group>"; };
+		610B84B91A50552B00FAEAAD /* WWStayTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWStayTest-Prefix.pch"; sourceTree = "<group>"; };
+		610B84BA1A50DC3200FAEAAD /* ViewDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDetailsViewController.h; sourceTree = "<group>"; };
+		610B84BB1A50DC3200FAEAAD /* ViewDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDetailsViewController.m; sourceTree = "<group>"; };
+		610B84BD1A50DC5A00FAEAAD /* ViewDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDetailsView.h; sourceTree = "<group>"; };
+		610B84BE1A50DC5A00FAEAAD /* ViewDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDetailsView.m; sourceTree = "<group>"; };
+		610B84C01A50FB6C00FAEAAD /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		610B84C11A50FEAB00FAEAAD /* TestAddDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAddDetailsViewController.m; sourceTree = "<group>"; };
+		610B84C31A50FFD700FAEAAD /* TestAddDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAddDetailsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +106,25 @@
 			children = (
 				610B848B1A5044C600FAEAAD /* AppDelegate.h */,
 				610B848C1A5044C600FAEAAD /* AppDelegate.m */,
-				610B848E1A5044C600FAEAAD /* ViewController.h */,
-				610B848F1A5044C600FAEAAD /* ViewController.m */,
+				610B848E1A5044C600FAEAAD /* HomeViewController.h */,
+				610B848F1A5044C600FAEAAD /* HomeViewController.m */,
+				610B84AF1A5048A800FAEAAD /* HomeView.h */,
+				610B84B01A5048A800FAEAAD /* HomeView.m */,
+				610B84B21A5050F900FAEAAD /* AddDetailsViewController.h */,
+				610B84B31A5050F900FAEAAD /* AddDetailsViewController.m */,
+				610B84B51A50512500FAEAAD /* AddDetailsView.h */,
+				610B84B61A50512500FAEAAD /* AddDetailsView.m */,
+				610B84BA1A50DC3200FAEAAD /* ViewDetailsViewController.h */,
+				610B84BB1A50DC3200FAEAAD /* ViewDetailsViewController.m */,
+				610B84BD1A50DC5A00FAEAAD /* ViewDetailsView.h */,
+				610B84BE1A50DC5A00FAEAAD /* ViewDetailsView.m */,
 				610B84911A5044C600FAEAAD /* Main.storyboard */,
 				610B84941A5044C600FAEAAD /* Images.xcassets */,
 				610B84961A5044C600FAEAAD /* LaunchScreen.xib */,
 				610B84871A5044C600FAEAAD /* Supporting Files */,
+				610B84AD1A50482E00FAEAAD /* ApartmentDetails.plist */,
+				610B84B91A50552B00FAEAAD /* WWStayTest-Prefix.pch */,
+				610B84C01A50FB6C00FAEAAD /* Constants.h */,
 			);
 			path = WWStayTest;
 			sourceTree = "<group>";
@@ -106,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				610B84A31A5044C600FAEAAD /* WWStayTestTests.m */,
+				610B84C11A50FEAB00FAEAAD /* TestAddDetailsViewController.m */,
+				610B84C31A50FFD700FAEAAD /* TestAddDetailsView.m */,
 				610B84A11A5044C600FAEAAD /* Supporting Files */,
 			);
 			path = WWStayTestTests;
@@ -201,6 +239,7 @@
 			files = (
 				610B84931A5044C600FAEAAD /* Main.storyboard in Resources */,
 				610B84981A5044C600FAEAAD /* LaunchScreen.xib in Resources */,
+				610B84AE1A50482E00FAEAAD /* ApartmentDetails.plist in Resources */,
 				610B84951A5044C600FAEAAD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610B84901A5044C600FAEAAD /* ViewController.m in Sources */,
+				610B84BF1A50DC5A00FAEAAD /* ViewDetailsView.m in Sources */,
+				610B84901A5044C600FAEAAD /* HomeViewController.m in Sources */,
+				610B84B71A50512500FAEAAD /* AddDetailsView.m in Sources */,
+				610B84B41A5050F900FAEAAD /* AddDetailsViewController.m in Sources */,
+				610B84B11A5048A800FAEAAD /* HomeView.m in Sources */,
+				610B84BC1A50DC3200FAEAAD /* ViewDetailsViewController.m in Sources */,
 				610B848D1A5044C600FAEAAD /* AppDelegate.m in Sources */,
 				610B848A1A5044C600FAEAAD /* main.m in Sources */,
 			);
@@ -229,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610B84C41A50FFD700FAEAAD /* TestAddDetailsView.m in Sources */,
 				610B84A41A5044C600FAEAAD /* WWStayTestTests.m in Sources */,
+				610B84C21A50FEAB00FAEAAD /* TestAddDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WWStayTest/WWStayTest-Prefix.pch";
 				INFOPLIST_FILE = WWStayTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WWStayTest/WWStayTest-Prefix.pch";
 				INFOPLIST_FILE = WWStayTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

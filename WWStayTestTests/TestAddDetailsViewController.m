@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-
+#import "AddDetailsViewController.h"
 @interface TestAddDetailsViewController : XCTestCase
+{
+    AddDetailsViewController *mAddDetailsVC;
+}
 
 @end
 
@@ -18,6 +21,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    mAddDetailsVC = [[AddDetailsViewController alloc] init];
 }
 
 - (void)tearDown {
@@ -25,16 +29,23 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+-(void)testPlistPathNil
+{
+
+    NSString *plistPath = [mAddDetailsVC getPlistPath:@"ApartmentDetails.plist"];
+    XCTAssertNotNil(plistPath, @"Value is not Nil!");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void)testEmailValueinValid
+{
+    BOOL isValid = [mAddDetailsVC validateEmailWithString :@"asdbjald"];
+    XCTAssertFalse(isValid, @"should be false");
 }
+-(void)testEmailValueValid
+{
+    BOOL isValid = [mAddDetailsVC validateEmailWithString :@"asdbjald@gmail.com"];
+    XCTAssertTrue(isValid, @"is valid");
+}
+
 
 @end

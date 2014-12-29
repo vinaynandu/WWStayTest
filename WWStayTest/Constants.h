@@ -8,6 +8,8 @@
 
 #ifndef WWStayTest_Constants_h
 #define WWStayTest_Constants_h
+#define kTextFldMaxChar    40
+#define kPhoneTextMaxChar    10
 
 
 #endif

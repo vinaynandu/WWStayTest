@@ -7,7 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef enum{
+    eSubmitBtnTag =10,
+    eCancelBtnTag,
+    eNameTxtTag,
+    eAddressTxtTag,
+    eCityTxtTag,
+    eStateTxtTag,
+    eCountryTxtTag,
+    eDescriptionTxtTag,
+    eAmenitiesTxtTag,
+    eContactNameTxtTag,
+    eEmailTxtTag,
+    ePhoneNumTxtTag
+    
+}AddDetailsViewTags;
 @interface AddDetailsView : UIView
-
+@property(nonatomic,weak)id                          mRequestTarget;
+@property(nonatomic,strong)UIScrollView *mScrollView;
+@property(nonatomic,strong)UIButton *mImageBtn1;
+@property(nonatomic,strong)UIButton *mImageBtn2;
+- (id)initWithTarget:(id)inTarget;
+-(void)createUIViewElements;
 @end

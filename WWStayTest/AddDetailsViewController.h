@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddDetailsViewController : UIViewController
-
+@interface AddDetailsViewController : UIViewController<UIImagePickerControllerDelegate>
+- (BOOL)validateEmailWithString:(NSString*)email;
+- (NSString*)getPlistPath:(NSString*) filename;
 @end

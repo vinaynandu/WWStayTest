@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum{
 
+    eNameLblTag =10,
+    eAddressLblTag,
+    eCityLblTag,
+    eStateLblTag,
+    eCountryLblTag,
+    eDescriptionLblTag,
+    eAmenitiesLblTag,
+    eContactNameLblTag,
+    eEmailLblTag,
+    ePhoneNumLblTag
+    
+}AddDetailsViewTags;
 @interface ViewDetailsView : UIView
+@property(nonatomic,weak)id                          mRequestTarget;
 
+- (id)initWithTarget:(id)inTarget;
+-(void)createUIViewElements;
 @end
